@@ -1,0 +1,120 @@
+.page-footer {
+  padding: 60px 0;
+  background-color: rgba(47, 48, 58, 1);
+}
+.container--arrange {
+  display: flex;
+  align-items: baseline;
+}
+.wrapper-address {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__list {
+  margin-top: 20px;
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__link {
+  color: var(--secondary-white-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address__link--white {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  transition: color 250ms var(--cubic-bezier);
+}
+
+/* -------------------присоединяйтесь --------*/
+
+.wrapper-soc {
+  margin-right: 93px;
+}
+.title-soc {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.soc-list {
+  display: flex;
+  margin-top: 20px;
+}
+.soc-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.soc-list__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+  transition: background-color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+/* ------------Подписка на рассылку-------------- */
+.subscription__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.subscription__box {
+  display: flex;
+  align-items: baseline;
+  margin-top: 20px;
+}
+.subscription__input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+  background: #2f303a;
+  outline: none;
+  margin-right: 12px;
+  color: var(--white-color);
+  &::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-white-color);
+  }
+}
+
+.subscription__button {
+  padding: 10px 27px;
+}
+.button__icon {
+  margin-left: 10px;
+}

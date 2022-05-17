@@ -1,0 +1,32 @@
+.company {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.company-item {
+  color: var(--icon-primary-color);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.company-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  border: 1px solid var(--icon-primary-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-bg-color);
+  fill: var(--icon-primary-color);
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}

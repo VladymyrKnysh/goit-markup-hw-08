@@ -1,7 +1,9 @@
 .hero {
   background-color: #2f303a;
-  padding: 200px 0;
-  height: 600px;
+
+  padding: 118px 0;
+
+  height: 400px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -10,18 +12,30 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    height: 600px;
+  }
 }
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
+
 .button {
   background-color: var(--accent-color);
   color: var(--white-color);

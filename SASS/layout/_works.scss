@@ -1,3 +1,9 @@
+.section.cut {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .works {
   display: flex;
 }

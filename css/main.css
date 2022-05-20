@@ -719,27 +719,45 @@ ul {
   padding: 60px 0;
   background-color: rgb(47, 48, 58);
 }
-
-.container--arrange {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .page-footer {
+    text-align: center;
+  }
 }
 
-.wrapper-address {
-  margin-right: 70px;
-  flex-grow: 1;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container--arrange {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--arrange {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-address {
+    margin-right: 70px;
+  }
 }
 
 .address {
   font-style: normal;
-}
-
-.address__list {
   margin-top: 20px;
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -762,8 +780,15 @@ ul {
 }
 
 /* -------------------присоединяйтесь --------*/
-.wrapper-soc {
-  margin-right: 93px;
+@media screen and (max-width: 767px) {
+  .wrapper-soc {
+    margin: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper-soc {
+    margin-right: 93px;
+  }
 }
 
 .title-soc {
@@ -772,11 +797,11 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 .soc-list {
-  display: flex;
-  margin-top: 20px;
+  display: inline-flex;
 }
 
 .soc-list__item:not(:last-child) {
@@ -799,6 +824,16 @@ ul {
 }
 
 /* ------------Подписка на рассылку-------------- */
+.subscription {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription {
+    margin-top: 60px;
+    width: 450px;
+  }
+}
+
 .subscription__label {
   font-weight: 700;
   font-size: 14px;
@@ -807,15 +842,16 @@ ul {
   color: var(--white-color);
 }
 
-.subscription__box {
-  display: flex;
-  align-items: baseline;
-  margin-top: 20px;
+@media screen and (min-width: 1200px) {
+  .subscription__box {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .subscription__input {
   height: 50px;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -823,7 +859,6 @@ ul {
   padding: 15px 16px;
   background: #2f303a;
   outline: none;
-  margin-right: 12px;
   color: var(--white-color);
 }
 .subscription__input::placeholder {
@@ -834,6 +869,16 @@ ul {
   line-height: 20px;
   letter-spacing: 0.03em;
   color: var(--secondary-white-color);
+}
+@media screen and (max-width: 1199px) {
+  .subscription__input {
+    margin: 20px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    margin-right: 12px;
+  }
 }
 
 .subscription__button {

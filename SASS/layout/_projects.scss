@@ -1,11 +1,23 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
 }
-.filter-item + .filter-item {
-  margin-left: 8px;
+.filter-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  margin-bottom: 15px;
 }
+
 .filter-button {
   display: block;
   background-color: #f5f4fa;
@@ -43,7 +55,15 @@
 
 .work-item {
   margin: 15px;
-  width: 370px;
+  // flex-basis: calc((100% - 90px) / 3);
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .work-name {
@@ -51,6 +71,10 @@
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 20px 24px 56px;
+  }
 }
 
 .work-title {
@@ -85,19 +109,31 @@
 .work-top-text {
   position: absolute;
 
-  padding: 63px 24px;
+  padding: 77px 24px;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--white-color);
   transition: transform 250ms var(--cubic-bezier);
   .work-link:hover &,
   .work-link:focus & {
     transform: translateY(-100%);
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 2px 4px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px;
   }
 }

@@ -13,6 +13,7 @@
     transform: translateX(0);
   }
 }
+
 .mobile-menu__container {
   padding: 48px 0 48px 40px;
   position: relative;
@@ -95,3 +96,6 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+// .no-scroll {
+//   overflow: hidden;
+// }

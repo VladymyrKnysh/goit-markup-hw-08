@@ -6,8 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 /*--------------------- logo -----------*/
@@ -15,15 +18,23 @@
   // outline: 1px solid tomato;
   display: flex;
   align-items: center;
-  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .logo {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo__text {
@@ -33,9 +44,15 @@
   color: var(--white-color);
 }
 /* --------------------nav------------------ */
+.nav {
+  margin-left: 88px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 .site-nav__item {
   &:not(:last-child) {
@@ -81,14 +98,22 @@
 /* ------------------contacts ------------*/
 .contacts {
   // outline: 1px solid tomato;
-  display: flex;
+
   margin-left: auto;
-  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contacts__item {
   &:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -98,8 +123,8 @@
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   fill: currentColor;
   transition: color 250ms var(--cubic-bezier);
@@ -107,13 +132,36 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
   margin-right: 10px;
 }
+
+.contacts__icon--envelope {
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+.contacts__icon--smart {
+  @media screen and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .menu-open-button {
   margin-left: auto;
   border: none;
   background-color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

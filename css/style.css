@@ -72,7 +72,7 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.container--flex {
+.page-header__container {
   display: flex;
   align-items: center;
   justify-content: start;

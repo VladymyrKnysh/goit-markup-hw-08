@@ -142,16 +142,27 @@ a {
 
 .modal {
   position: absolute;
-  padding: 35px 40px 45px;
+  padding: 40px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms, border-radius 250ms;
+}
+@media screen and (max-width: 449px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-button {
@@ -185,32 +196,32 @@ a {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
+}
 
 .form {
-  width: 448px;
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
 }
 
 .form > ul {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .form-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
 }
-.form-item:last-child {
-  margin-bottom: 0;
-}
-
-.form ul {
+.form-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -288,8 +299,8 @@ a {
   justify-content: center;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -300,14 +311,26 @@ a {
 .checkbox-input:focus + .checkbox-label span {
   border-color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .checkbox-link {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-icon {
@@ -358,6 +381,11 @@ a {
   height: 100%;
   padding: 48px 0 48px 40px;
 }
+@media screen and (max-width: 410px) {
+  .mobile-menu__container {
+    padding-left: 10px;
+  }
+}
 
 .menu-close-button {
   position: absolute;
@@ -366,6 +394,9 @@ a {
   background-color: var(--white-bg-color);
   border-radius: 50%;
   border: none;
+}
+.menu-close-button:hover, .menu-close-button:focus {
+  fill: var(--accent-color);
 }
 
 .mobile-nav__item:not(:last-child) {
@@ -396,7 +427,7 @@ a {
   text-decoration: none;
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
@@ -404,7 +435,7 @@ a {
 .mobile-contacts__link--dark {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
@@ -428,6 +459,11 @@ a {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 410px) {
+  .mobile-soc__link {
+    font-size: 14px;
+  }
 }
 
 .no-scroll {
@@ -478,6 +514,9 @@ a {
   margin-left: auto;
   border: none;
   background-color: var(--white-color);
+}
+.menu-open-button:hover, .menu-open-button:focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-open-button {

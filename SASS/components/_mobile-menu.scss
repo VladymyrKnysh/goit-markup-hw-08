@@ -22,6 +22,10 @@
   overflow-y: auto;
   height: 100%;
   padding: 48px 0 48px 40px;
+
+  @media screen and (max-width: 410px) {
+    padding-left: 10px;
+  }
 }
 
 .menu-close-button {
@@ -31,6 +35,10 @@
   background-color: var(--white-bg-color);
   border-radius: 50%;
   border: none;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .mobile-nav {
 }
@@ -63,14 +71,14 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 .mobile-contacts__link--dark {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
@@ -89,12 +97,15 @@
   }
 }
 .mobile-soc__link {
-  // display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (max-width: 410px) {
+    font-size: 14px;
+  }
 }
 .no-scroll {
   overflow: hidden;

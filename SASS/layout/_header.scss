@@ -40,6 +40,10 @@
   margin-left: auto;
   border: none;
   background-color: var(--white-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;

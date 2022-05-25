@@ -3,7 +3,7 @@
     openMenuBtn: document.querySelector(".menu-open-button"),
     closeMenuBtn: document.querySelector(".menu-close-button"),
       menu: document.querySelector(".mobile-menu"),
-      // body: document.querySelector("body"),
+      body: document.querySelector("body"),
       
   };
 
@@ -12,7 +12,7 @@
 
   function toggleMenu() {
       refs.menu.classList.toggle("is-open");
-      // refs.body.classList.toggle("no-scroll");
+      refs.body.classList.toggle("no-scroll");
       
   }
 })();

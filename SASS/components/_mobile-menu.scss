@@ -15,13 +15,13 @@
 }
 
 .mobile-menu__container {
-  padding: 48px 0 48px 40px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
   height: 100%;
+  padding: 48px 0 48px 40px;
 }
 
 .menu-close-button {
@@ -96,6 +96,6 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-// .no-scroll {
-//   overflow: hidden;
-// }
+.no-scroll {
+  overflow: hidden;
+}

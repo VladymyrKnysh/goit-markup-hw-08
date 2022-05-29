@@ -11,6 +11,11 @@
   transform: scale(0.1) rotate(-180deg);
   border-radius: 50%;
 }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 
 .modal {
   position: absolute;
@@ -58,11 +63,6 @@
   }
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
 /*---------------- Форма модального окна -----------------*/
 .modal-title {
   font-family: 'Roboto';

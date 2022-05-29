@@ -1,21 +1,17 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  row-gap: 15px;
+  column-gap: 8px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
-}
-.filter-item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-  margin-bottom: 15px;
 }
 
 .filter-button {
@@ -48,16 +44,23 @@
 /*-----------------примеры работ-------------- */
 
 .work {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .work-item {
-  margin: 15px;
-  width: 100%;
+  // outline: 1px solid tomato;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
+    margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
@@ -72,7 +75,7 @@
   border-left: 1px solid #eeeeee;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 20px 24px 56px;
+    flex-grow: 1;
   }
 }
 
@@ -91,8 +94,10 @@
 }
 
 .work-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
-  display: block;
   transition: box-shadow 250ms var(--cubic-bezier);
   &:hover,
   &:focus {

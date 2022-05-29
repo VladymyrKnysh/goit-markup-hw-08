@@ -5,7 +5,6 @@
 .page-header__container {
   display: flex;
   align-items: center;
-  justify-content: start;
 
   @media screen and (max-width: 767px) {
     padding-top: 10px;
@@ -125,6 +124,9 @@
 
 .contacts__item {
   &:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
     @media screen and (min-width: 1200px) {
       margin-right: 50px;
     }

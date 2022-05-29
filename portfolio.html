@@ -9,431 +9,515 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
 
-     
-        
-
     <header class="page-header">
       <div class="container page-header__container">
+        <a href="" class="logo"> Web<span class="logo__text">Studio</span> </a>
 
-          <a href="" class="logo">
-            Web<span class="logo__text">Studio</span>
-          </a>
-
-            <button class="menu-open-button" type="button">
+        <button class="menu-open-button" type="button">
           <svg class="menu-open-button__icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-menu-open"></use>
-            </svg>
-           </button>
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
 
-        <nav class="nav">  
+        <nav class="nav">
           <ul class="site-nav list">
             <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a></li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a>
+            </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts list">
-          <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
-            <svg class="contacts__icon contacts__icon--envelope" width="16" height="12">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a>
-        </li>
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon contacts__icon--envelope" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
 
-          <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
-            <svg class="contacts__icon contacts__icon--smart" width="10" height="16">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>+38 096 111 11 11</a>
-        </li>
-
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon contacts__icon--smart" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
 
-          <div class="mobile-menu">
-            <div class="container mobile-menu__container">
-
-               <button class="menu-close-button" type="button">
-               <svg class="menu-close-button__icon" width="40" height="40">
+      <div class="mobile-menu">
+        <div class="container mobile-menu__container">
+          <button class="menu-close-button" type="button">
+            <svg class="menu-close-button__icon" width="40" height="40">
               <use href="./images/icons.svg#icon-menu-close"></use>
-             </svg>
-              </button>
+            </svg>
+          </button>
 
-           <ul class="mobile-nav list">
-            <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link ">Студия</a></li>
-            <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--active">Портфолио</a></li>
+          <ul class="mobile-nav list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--active"
+                >Портфолио</a
+              >
+            </li>
             <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
           </ul>
 
-            <div class="contacts-soc-wrap">
-              <ul class="mobile-contacts list">
-                <li class="mobile-contacts__item">
-                  <a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>  
-               </li>
+          <div class="contacts-soc-wrap">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>
+              </li>
 
-               <li class="mobile-contacts__item">
-                 <a href="mailto:info@devstudio.com" class="mobile-contacts__link mobile-contacts__link--dark">info@devstudio.com</a>  
+              <li class="mobile-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts__link mobile-contacts__link--dark"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
 
-             <ul class="mobile-soc list">
-               <li class="mobile-soc__item">
-                  <a href="" class="mobile-soc__link">Instagram</a>
+            <ul class="mobile-soc list">
+              <li class="mobile-soc__item">
+                <a href="" class="mobile-soc__link">Instagram</a>
               </li>
 
-               <li class="mobile-soc__item">
-                 <a href="" class="mobile-soc__link">Twitter</a>
+              <li class="mobile-soc__item">
+                <a href="" class="mobile-soc__link">Twitter</a>
               </li>
 
-               <li class="mobile-soc__item">
-                  <a href="" class="mobile-soc__link">Facebook</a>
+              <li class="mobile-soc__item">
+                <a href="" class="mobile-soc__link">Facebook</a>
               </li>
 
-               <li class="mobile-soc__item">
-                  <a href="" class="mobile-soc__link">LinkedIn</a>
+              <li class="mobile-soc__item">
+                <a href="" class="mobile-soc__link">LinkedIn</a>
               </li>
             </ul>
-            </div> 
-            </div>
           </div>
-    
-     
-    </header> 
+        </div>
+      </div>
+    </header>
     <main>
-      <!---------------------- фильтр ---------------------------------->
+      <!-- фильтр -->
       <section class="section">
         <div class="container">
-            <h1 class="visually-hidden">Портфолио</h1>
-            <!--фильтр портфолио  -->
-            <ul class="filter list">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <!--фильтр портфолио  -->
+          <ul class="filter list">
+            <li class="filter-item">
+              <button type="button" class="filter-button">Все</button>
+            </li>
 
-              <li class="filter-item">
-                <button type="button" class="filter-button">Все</button>
-              </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
 
-              <li class="filter-item">
-                <button type="button" class="filter-button">Веб-сайты</button>
-              </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
 
-              <li class="filter-item">
-                <button type="button" class="filter-button">Приложения</button>
-              </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- примеры работ -->
+          <ul class="work list">
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project1-1x.jpg 1x, ./images/project1-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-              <li class="filter-item">
-                <button type="button" class="filter-button">Дизайн</button>
-              </li>
-              <li class="filter-item">
-                <button type="button" class="filter-button">Маркетинг</button>
-              </li>
-            </ul>
-            <!------------------------ примеры работ ----------------------------->
-            <ul class="work list">
+                    <source
+                      srcset="./images/project1-1x-tab.jpg 1x, ./images/project1-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-              <li class="work-item">
-                <a href="" class="work-link">
-                  <div class="work-top-wrap">
-                    <picture>
-                <source srcset="./images/project1-1x.jpg 1x,
-                 ./images/project1-2x.jpg 2x" media="(min-width:1200px)">
+                    <source
+                      srcset="./images/project1-1x-mob.jpg 1x, ./images/project1-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project1-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Технокряк</h2>
+                  <p class="work-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project2-1x.jpg 1x, ./images/project2-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-                <source srcset="./images/project1-1x-tab.jpg 1x,
-                 ./images/project1-2x-tab.jpg 2x" media="(min-width:768px)">
+                    <source
+                      srcset="./images/project2-1x-tab.jpg 1x, ./images/project2-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project1-1x-mob.jpg 1x,
-                 ./images/project1-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project1-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                      <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                        позволит посетителю получить
-                        исчерпывающие сведения о компании или частном лице.</p>
-                  </div>                
-                  <div class="work-name">
-                    <h2 class="work-title">Технокряк</h2>
-                    <p class="work-text">Веб-сайт</p> 
-                  </div>                            
-                </a>
+                    <source
+                      srcset="./images/project2-1x-mob.jpg 1x, ./images/project2-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project2-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="work-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
 
-              </li>
-              <li class="work-item">
-                <a href="" class="work-link">
-                 
-                    <div class="work-top-wrap">
-                           <picture>
-                <source srcset="./images/project2-1x.jpg 1x,
-                 ./images/project2-2x.jpg 2x" media="(min-width:1200px)">
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project3-1x.jpg 1x, ./images/project3-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-                <source srcset="./images/project2-1x-tab.jpg 1x,
-                 ./images/project2-2x-tab.jpg 2x" media="(min-width:768px)">
+                    <source
+                      srcset="./images/project3-1x-tab.jpg 1x, ./images/project3-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project2-1x-mob.jpg 1x,
-                 ./images/project2-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project2-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                      <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                        позволит посетителю получить
-                        исчерпывающие сведения о компании или частном лице.</p>
-                    </div>
-                  <div class="work-name">
-                    <h2 class="work-title">Технокряк</h2>
-                    <p class="work-text">Веб-сайт</p>
-                  </div>
-                 
-                </a>
-              </li>
+                    <source
+                      srcset="./images/project3-1x-mob.jpg 1x, ./images/project3-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project3-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Ресторан Seafood</h2>
+                  <p class="work-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project4-1x.jpg 1x, ./images/project4-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-              <li class="work-item">
-                <a href="" class="work-link">
-                    <div class="work-top-wrap">
-              <picture>
-                <source srcset="./images/project3-1x.jpg 1x,
-                 ./images/project3-2x.jpg 2x" media="(min-width:1200px)">
+                    <source
+                      srcset="./images/project4-1x-tab.jpg 1x, ./images/project4-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project3-1x-tab.jpg 1x,
-                 ./images/project3-2x-tab.jpg 2x" media="(min-width:768px)">
+                    <source
+                      srcset="./images/project4-1x-mob.jpg 1x, ./images/project4-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project4-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Проект Prime</h2>
+                  <p class="work-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project5-1x.jpg 1x, ./images/project5-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-                <source srcset="./images/project3-1x-mob.jpg 1x,
-                 ./images/project3-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project3-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                      <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                        позволит посетителю получить
-                        исчерпывающие сведения о компании или частном лице.</p>
-                    </div>
-                  <div class="work-name">
-                    <h2 class="work-title">Ресторан Seafood</h2>
-                    <p class="work-text">Приложение</p>
-                  </div>
-                
-                </a>
-              </li>
-              <li class="work-item">
-                <a href="" class="work-link">
-                  <div class="work-top-wrap">
-                          <picture>
-                <source srcset="./images/project4-1x.jpg 1x,
-                 ./images/project4-2x.jpg 2x" media="(min-width:1200px)">
+                    <source
+                      srcset="./images/project5-1x-tab.jpg 1x, ./images/project5-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project4-1x-tab.jpg 1x,
-                 ./images/project4-2x-tab.jpg 2x" media="(min-width:768px)">
+                    <source
+                      srcset="./images/project5-1x-mob.jpg 1x, ./images/project5-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project5-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Проект Boxes</h2>
+                  <p class="work-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project6-1x.jpg 1x, ./images/project6-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-                <source srcset="./images/project4-1x-mob.jpg 1x,
-                 ./images/project4-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project4-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                    <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить
-                      исчерпывающие сведения о компании или частном лице.</p>
-                  </div>
-                  <div class="work-name">
-                    <h2 class="work-title">Проект Prime</h2>
-                    <p class="work-text">Маркетинг</p>
-                  </div>
-                 
-                </a>
-              </li>
-              <li class="work-item">
-                <a href="" class="work-link">
-                    <div class="work-top-wrap">
-                            <picture>
-                <source srcset="./images/project5-1x.jpg 1x,
-                 ./images/project5-2x.jpg 2x" media="(min-width:1200px)">
+                    <source
+                      srcset="./images/project6-1x-tab.jpg 1x, ./images/project6-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project5-1x-tab.jpg 1x,
-                 ./images/project5-2x-tab.jpg 2x" media="(min-width:768px)">
+                    <source
+                      srcset="./images/project6-1x-mob.jpg 1x, ./images/project6-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project6-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Inspiration has no Borders</h2>
+                  <p class="work-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project7-1x.jpg 1x, ./images/project7-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-                <source srcset="./images/project5-1x-mob.jpg 1x,
-                 ./images/project5-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project5-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                      <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                        позволит посетителю получить
-                        исчерпывающие сведения о компании или частном лице.</p>
-                    </div>
-                  <div class="work-name">
-                      <h2 class="work-title">Проект Boxes</h2>
-                      <p class="work-text">Приложение</p>
-                  </div>
-                
-                </a>
-              </li>
-              <li class="work-item">
-                <a href="" class="work-link">
-                    <div class="work-top-wrap">
-                            <picture>
-                <source srcset="./images/project6-1x.jpg 1x,
-                 ./images/project6-2x.jpg 2x" media="(min-width:1200px)">
+                    <source
+                      srcset="./images/project7-1x-tab.jpg 1x, ./images/project7-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project6-1x-tab.jpg 1x,
-                 ./images/project6-2x-tab.jpg 2x" media="(min-width:768px)">
+                    <source
+                      srcset="./images/project7-1x-mob.jpg 1x, ./images/project7-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project7-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Издание Limited Edition</h2>
+                  <p class="work-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project8-1x.jpg 1x, ./images/project8-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-                <source srcset="./images/project6-1x-mob.jpg 1x,
-                 ./images/project6-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project6-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                      <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                        позволит посетителю получить
-                        исчерпывающие сведения о компании или частном лице.</p>
-                    </div>
-                  <div class="work-name">
-                    <h2 class="work-title">Inspiration has no Borders</h2>
-                    <p class="work-text">Веб-сайт</p>
-                  </div>
-                 
-                </a>
-              </li>
-              <li class="work-item">
-                <a href="" class="work-link">
-                  <div class="work-top-wrap">
-                          <picture>
-                <source srcset="./images/project7-1x.jpg 1x,
-                 ./images/project7-2x.jpg 2x" media="(min-width:1200px)">
+                    <source
+                      srcset="./images/project8-1x-tab.jpg 1x, ./images/project8-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project7-1x-tab.jpg 1x,
-                 ./images/project7-2x-tab.jpg 2x" media="(min-width:768px)">
+                    <source
+                      srcset="./images/project8-1x-mob.jpg 1x, ./images/project8-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project8-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Проект LAB</h2>
+                  <p class="work-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link">
+                <div class="work-top-wrap">
+                  <picture>
+                    <source
+                      srcset="./images/project9-1x.jpg 1x, ./images/project9-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
 
-                <source srcset="./images/project7-1x-mob.jpg 1x,
-                 ./images/project7-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project7-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                    <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить
-                      исчерпывающие сведения о компании или частном лице.</p>
-                  </div>
-                  <div class="work-name">
-                      <h2 class="work-title">Издание Limited Edition</h2>
-                      <p class="work-text">Дизайн</p>
-                  </div>
-                
-                </a>
-              </li>
-              <li class="work-item">
-                <a href="" class="work-link">
-                  <div class="work-top-wrap">
-                          <picture>
-                <source srcset="./images/project8-1x.jpg 1x,
-                 ./images/project8-2x.jpg 2x" media="(min-width:1200px)">
+                    <source
+                      srcset="./images/project9-1x-tab.jpg 1x, ./images/project9-2x-tab.jpg 2x"
+                      media="(min-width:768px)"
+                    />
 
-                <source srcset="./images/project8-1x-tab.jpg 1x,
-                 ./images/project8-2x-tab.jpg 2x" media="(min-width:768px)">
-
-                <source srcset="./images/project8-1x-mob.jpg 1x,
-                 ./images/project8-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project8-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                    <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить
-                      исчерпывающие сведения о компании или частном лице.</p>
-                  </div>
-                  <div class="work-name">
-                    <h2 class="work-title">Проект LAB</h2>
-                    <p class="work-text">Маркетинг</p>
-                  </div>
-               
-                </a>
-              </li>
-              <li class="work-item">
-                <a href="" class="work-link">
-                  <div class="work-top-wrap">
-                          <picture>
-                <source srcset="./images/project9-1x.jpg 1x,
-                 ./images/project9-2x.jpg 2x" media="(min-width:1200px)">
-
-                <source srcset="./images/project9-1x-tab.jpg 1x,
-                 ./images/project9-2x-tab.jpg 2x" media="(min-width:768px)">
-
-                <source srcset="./images/project9-1x-mob.jpg 1x,
-                 ./images/project9-2x-mob.jpg 2x" media="(min-width:320px)">
-                  <img src="./images/project9-2x-mob.jpg" alt="проэкт"/>
-              </picture>
-                    <p class="work-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить
-                      исчерпывающие сведения о компании или частном лице.</p>
-                  </div>
-                  <div class="work-name">
-                    <h2 class="work-title">Growing Business</h2>
-                    <p class="work-text">Приложение</p>
-                  </div>
-              
-                </a>
-              </li>
-            </ul>
+                    <source
+                      srcset="./images/project9-1x-mob.jpg 1x, ./images/project9-2x-mob.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/project9-2x-mob.jpg" alt="проэкт" />
+                  </picture>
+                  <p class="work-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="work-name">
+                  <h2 class="work-title">Growing Business</h2>
+                  <p class="work-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-      
       </section>
     </main>
-    <!---------------------------------------- ФУТЕР ------------------------------------------>
-<footer class="page-footer">
-  <div class="container container--arrange">
-      <div class="wrapper-address">
-        <a href="" class="logo">
-          Web<span class=" logo__text logo__text--white ">Studio</span>
-        </a>
-        <address class="address">
-          <ul class="address__list list">
-            <li class="address__item">
-              <a href="https://goo.gl/maps/ck3FDhw8eXWU3aNy8" target="blank" rel="noopener, noindex, nofollow"
-                class="address__link address__link--white">г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-            <li class="address__item"><a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a></li>
-            <li class="address__item"><a href="tel:+380961111111" class="address__link">+38 099 111 11 11</a></li>
-          </ul>
+    <!-- футэр -->
+    <footer class="page-footer">
+      <div class="container container--arrange">
+        <div class="wrapper-address">
+          <a href="" class="logo"> Web<span class="logo__text logo__text--white">Studio</span> </a>
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/ck3FDhw8eXWU3aNy8"
+                  target="blank"
+                  rel="noopener, noindex, nofollow"
+                  class="address__link address__link--white"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link">+38 099 111 11 11</a>
+              </li>
+            </ul>
           </address>
-          </div>
+        </div>
 
-    <!-------------------------------------- ПРИСОЕДИНЯЙТЕСЬ -------------------------------------->
-          <div class="wrapper-soc">
-            <p class="title-soc">присоединяйтесь</p>
-              <ul class="soc-list list">
-            
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                  </a>
-                </li>
+        <!-- присоединяйтесь -->
+        <div class="wrapper-soc">
+          <p class="title-soc">присоединяйтесь</p>
+          <ul class="soc-list list">
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg class="soc-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
 
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                  </a>
-                </li>
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg class="soc-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
 
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                  </a>
-                </li>
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg class="soc-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
 
-                <li class="soc-list__item">
-                  <a href="" class="soc-list__link">
-                    <svg class="soc-list__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                  </a>
-                </li>
-            
-              </ul>
-          </div>
-    <!--------------------------------------- ФОРМА ПОДПИСКИ -------------------------------------->
-      <form class="subscription">
-            <label class=" subscription__label" for="subscription">Подпишитесь на рассылку</label>
-            <div class="subscription__box">
-              <input class="subscription__input" type="text" name="subscription" id="subscription" placeholder="E-mail">
-              <button class="button subscription__button" type="submit">Подписаться
+            <li class="soc-list__item">
+              <a href="" class="soc-list__link">
+                <svg class="soc-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- форма подписки -->
+        <form class="subscription">
+          <label class="subscription__label" for="subscription">Подпишитесь на рассылку</label>
+          <div class="subscription__box">
+            <input
+              class="subscription__input"
+              type="text"
+              name="subscription"
+              id="subscription"
+              placeholder="E-mail"
+            />
+            <button class="button subscription__button" type="submit">
+              Подписаться
               <svg class="button__icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
-            </div>
-            </form>
-  </div>
-</footer>
-<script src="./js/menu.js"></script>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -139,6 +139,12 @@ a {
   border-radius: 50%;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .modal {
   position: absolute;
   padding: 40px;
@@ -184,12 +190,6 @@ a {
 }
 .modal-button:hover, .modal-button:focus {
   fill: var(--accent-color);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 /*---------------- Форма модального окна -----------------*/
@@ -474,7 +474,6 @@ a {
 .page-header__container {
   display: flex;
   align-items: center;
-  justify-content: start;
 }
 @media screen and (max-width: 767px) {
   .page-header__container {
@@ -593,6 +592,11 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 50px;
@@ -1073,7 +1077,7 @@ a {
 
 .subscription__input {
   height: 50px;
-  width: 100%;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1092,6 +1096,11 @@ a {
   letter-spacing: 0.03em;
   color: var(--secondary-white-color);
 }
+@media screen and (max-width: 479px) {
+  .subscription__input {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1199px) {
   .subscription__input {
     margin: 20px 0;
@@ -1099,12 +1108,18 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .subscription__input {
+    width: 358px;
     margin-right: 12px;
   }
 }
 
 .subscription__button {
   padding: 10px 27px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__button {
+    margin: 0;
+  }
 }
 
 .button__icon {
@@ -1114,25 +1129,20 @@ a {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  row-gap: 15px;
+  column-gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .filter {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .filter {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
-}
-
-.filter-item {
-  margin-bottom: 15px;
-}
-.filter-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filter-button {
@@ -1160,18 +1170,22 @@ a {
 }
 
 /*-----------------примеры работ-------------- */
-.work {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+@media screen and (min-width: 768px) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.work-item {
-  margin: 15px;
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .work-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .work-item {
+    margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
@@ -1189,7 +1203,7 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .work-name {
-    padding: 20px 24px 56px;
+    flex-grow: 1;
   }
 }
 
@@ -1208,8 +1222,10 @@ a {
 }
 
 .work-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
-  display: block;
   transition: box-shadow 250ms var(--cubic-bezier);
 }
 .work-link:hover, .work-link:focus {

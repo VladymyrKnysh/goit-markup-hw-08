@@ -21,9 +21,9 @@
 .wrapper-address {
   // outline: 1px solid tomato;
 
-  // flex-grow: 1;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    flex-grow: 1;
   }
 }
 
@@ -106,7 +106,6 @@
 /* ------------Подписка на рассылку-------------- */
 .subscription {
   // outline: 1px solid tomato;
-  width: 100%;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 60px;
